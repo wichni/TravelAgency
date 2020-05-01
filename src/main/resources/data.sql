@@ -9,16 +9,16 @@ values (nextval('reservation_seq'), 240.99, 3, 3);
 insert into RESERVATION (id, negotiated_price, client_id, trip_id)
 values (nextval('reservation_seq'), 200.99, 4, 4);
 
-insert into CLIENT (id, first_name, last_name, id_number, reservation_id)
-values (nextval('client_seq'), 'Jan', 'Nowak', 'CDR097432', 1);
-insert into CLIENT (id, first_name, last_name, id_number, reservation_id)
-values (nextval('client_seq'), 'Piotr', 'Malysz', 'POE321234', 2);
-insert into CLIENT (id, first_name, last_name, id_number, reservation_id)
-values (nextval('client_seq'), 'Patryk', 'Koscielny', 'ERT345678', 3);
-insert into CLIENT (id, first_name, last_name, id_number, reservation_id)
-values (nextval('client_seq'), 'Maciej', 'Iluzyjny', 'PWE923456', 4);
-insert into CLIENT (id, first_name, last_name, id_number, reservation_id)
-values (nextval('client_seq'), 'Tomek', 'Borowski', 'OIU765343', null);
+insert into CLIENT (id, first_name, last_name, id_number)
+values (nextval('client_seq'), 'Jan', 'Nowak', 'CDR097432');
+insert into CLIENT (id, first_name, last_name, id_number)
+values (nextval('client_seq'), 'Piotr', 'Malysz', 'POE321234');
+insert into CLIENT (id, first_name, last_name, id_number)
+values (nextval('client_seq'), 'Patryk', 'Koscielny', 'ERT345678');
+insert into CLIENT (id, first_name, last_name, id_number)
+values (nextval('client_seq'), 'Maciej', 'Iluzyjny', 'PWE923456');
+insert into CLIENT (id, first_name, last_name, id_number)
+values (nextval('client_seq'), 'Tomek', 'Borowski', 'OIU765343');
 
 insert into TRIP (id, date_of_departure, date_of_return, suggested_price, destination_id, guide_id)
 values (nextval('trip_seq'), '2018-04-30', '2018-05-10', 250.50, 1, 1),
